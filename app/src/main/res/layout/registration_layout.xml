@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_height="match_parent"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    app:cardCornerRadius="20sp"
+                                    app:cardElevation="5dp"
+
+                                    android:layout_margin="10dp">
+<android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/regbg"
+                                             android:id="@+id/reg_layout">
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="78dp" app:srcCompat="@drawable/registrationtxt"
+            android:id="@+id/imageView3" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintVertical_bias="0.137" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/reg_username" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.412" app:layout_constraintVertical_bias="0.16"
+            android:hint="Enter the username"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/reg_password" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:hint="Password"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/reg_email"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.477" app:layout_constraintVertical_bias="0.078"
+            app:layout_constraintTop_toBottomOf="@+id/reg_password" android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp" android:hint="Enter the Email Id"/>
+    <Button
+            android:text="Register User"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/reg_btn" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.748" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="Already have an Account ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/reg_account_exist"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.814" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="39dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.026"
+            android:text="back" android:id="@+id/reg_back_btn"/>
+<!--    <EditText
+            android:layout_width="106dp"
+            android:layout_height="46dp"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/reg_userId" app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="@+id/reg_password"
+            android:layout_marginLeft="8dp" app:layout_constraintHorizontal_bias="0.912"
+            app:layout_constraintVertical_bias="0.973" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"/>-->
+</android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
